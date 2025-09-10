@@ -88,5 +88,6 @@ broadcastMatch(match, { type: 'gameOver', winner: state.winner });
 }, TICK_MS);
 
 
+
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => console.log('Server listening on', PORT));
+server.listen(PORT, "0.0.0.0", () => console.log("Server listening on", PORT));
